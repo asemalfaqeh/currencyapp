@@ -130,7 +130,9 @@ fun CurrencyPickerDialog(
                                 CurrencyCodePickerView(
                                     code = CurrencyCode.valueOf(currency.code),
                                     isSelected = selectedCurrencyCode.name == currency.code,
-                                    onSelect = { selectedCurrencyCode = it }
+                                    onSelect = {
+                                        selectedCurrencyCode = it
+                                    }
                                 )
                             }
                         }
